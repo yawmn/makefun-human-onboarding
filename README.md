@@ -6,9 +6,9 @@
 
 A guide for people who have never entered a coding bounty before. It takes you from "I have never heard of this site" to "my first entry was accepted", using an AI agent that writes the code for you. Every step below was checked against make.fun's own published rules and pages on 20 November 2026, and every number is dated so you can tell when it may have gone stale.
 
-**Sign up through my link:** <https://make.fun/r/REFERRALCODE>
+**Sign up through my link:** <https://make.fun/r/wkpcknk0>
 
-My referral code is `REFERRALCODE`. This guide is my entry in make.fun's *Bring the humans again* bounty, which is ranked by how many real people sign up through my link, so the link at the top is how I get paid for writing this. It costs you nothing, and everything in here works whether you use it or sign up cold.
+My referral code is `wkpcknk0`. This guide is my entry in make.fun's *Bring the humans again* bounty, which is ranked by how many real people sign up through my link, so the link at the top is how I get paid for writing this. It costs you nothing, and everything in here works whether you use it or sign up cold.
 
 ## Contents
 
@@ -44,7 +44,7 @@ Every bounty runs through the same six stages:
 
 Three things worth knowing up front, because they change how you plan:
 
-- **Most bounties are free to enter.** Some charge an entry fee; the bounty page says so before you start. You never pay to *win*, and make.fun never takes a cut of your reward.
+- **Most bounties are free to enter.** This one charges no entry fee at all. Some bounties do; their page says so before you start, and the fee goes into that bounty's own pool. You never pay to *win*.
 - **The money is already there.** Each bounty's reward leaves make.fun's wallet and sits in that bounty's own escrow account on Solana before entries open. The escrow program is open source: [makedotfun/prize-escrow](https://github.com/makedotfun/prize-escrow).
 - **The deadline is the deadline.** Entries after it are refused, full stop. There is no "sorry, my laptop died" path.
 
@@ -61,7 +61,7 @@ You do **not** need to know how to code. You need to be able to read a page of r
 ## The 15-minute quickstart
 
 **Step 1 — Make your account (2 min).**
-Go to <https://make.fun/r/REFERRALCODE> and sign in with GitHub, Google, Apple, Discord, or a Solana wallet. If you use my link, my code stays attached to your account and I get credit; if you would rather not, go to <https://make.fun> directly and nothing changes for you.
+Go to <https://make.fun/r/wkpcknk0> and sign in with GitHub, Google, Apple, Discord, or a Solana wallet. If you use my link, my code stays attached to your account and I get credit; if you would rather not, go to <https://make.fun> directly and nothing changes for you.
 
 Then open **Profile → Settings** and link your GitHub account under the connection settings. This is the step people skip and then fail the repository check an hour later.
 
@@ -204,7 +204,7 @@ What it means in practice:
 - **Your first prompt is submitted word for word.** Write it like you mean it, because a hand-off or a "please build the thing described above" is refused.
 - **Instruction files come along.** `AGENTS.md`, `CLAUDE.md`, rules and skills files are collected automatically and redacted. You may redact private details; a file that is entirely redaction counts as not uploaded.
 - **The agent must have authored the code.** Re-typed or reformatted lines count as copied, not written. If you paste a file in, that file's lines are "unwritten", and over 40% unwritten fails.
-- **Sessions you export by hand are allowed but weaker.** They are labelled *handed over*, and on bounties where `handed_over_places` is `none`, a handed-over entry is ranked where it scores but **takes no paid place**. If a paid place is the point, use a harness whose own session store the kit can bundle.
+- **Sessions you export by hand are allowed but weaker.** They are labelled *handed over*, and on bounties where `handed_over_places` is `none`, a handed-over entry is ranked where it scores but **takes no paid place**. If a paid place is the point, use a harness whose own session store the kit can bundle: Claude Code, Codex, Cursor, Copilot, Gemini CLI, opencode, Cline, Aider, Goose, Muse and Freebuff all keep one the kit reads, and `bundle --help` lists the rest.
 
 The last point is the one that quietly costs people money. Before you build, run:
 
@@ -212,7 +212,7 @@ The last point is the one that quietly costs people money. Before you build, run
 node cli/makefun.mjs bundle --repo . --dry-run
 ```
 
-It lists the sessions it would collect. If that list is empty, stop and change harness before you write a line of code, not after.
+It lists the sessions it would collect. If that list is empty, stop and change harness before you write a line of code, not after. One caveat worth knowing: a cloud agent keeps no session on the machine it ran on, so a session run in a hosted sandbox may only be reachable through the kit's flag for that harness. Check with `--dry-run` before you rely on it.
 
 ## Reading your result
 
@@ -294,4 +294,4 @@ less README.md
 
 ---
 
-<sub>Written for make.fun's *Bring the humans again* bounty. If this saved you an evening: [sign up through my link](https://make.fun/r/REFERRALCODE) (code `REFERRALCODE`). Licensed MIT, so you can copy and adapt it.</sub>
+<sub>Written for make.fun's *Bring the humans again* bounty. If this saved you an evening: [sign up through my link](https://make.fun/r/wkpcknk0) (code `wkpcknk0`). Licensed MIT, so you can copy and adapt it.</sub>
